@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Caterpillar Tools</string>
+    <string name="dummy_content">请输入界定值</string>
+    <string name="loginButton">确认</string>
+    <string name="title_activity_calculate">CalculateActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+
+</resources>

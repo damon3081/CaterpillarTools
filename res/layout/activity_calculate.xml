@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE9F6" >
+
+    <LinearLayout
+        android:id="@+id/result_LinearLauout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jiedingzhi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" >
+
+        <TextView
+            android:id="@+id/result_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:keepScreenOn="true"
+            android:text="结果"
+            android:textColor="#33b5e5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/editbox"
+            android:ems="10"
+            android:enabled="false"
+            android:text="0"
+            android:inputType="numberSigned|numberDecimal"
+            android:textColor="#0101DF"
+            android:textSize="20sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jiedingzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:keepScreenOn="true"
+            android:text="当前界定值为"
+            android:textColor="#33b5e5"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:keepScreenOn="true"
+            android:text=""
+            android:textColor="#ff0000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/result_LinearLauout"
+        android:layout_below="@+id/result_LinearLauout"
+        android:layout_marginTop="18dp"
+        android:keepScreenOn="true"
+        android:text="硬度"
+        android:textColor="#33b5e5"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/jiedingzhi"
+        android:keepScreenOn="true"
+        android:text="距离"
+        android:textColor="#33b5e5"
+        android:textSize="18sp" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_LinearLauout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" >
+
+        <EditText
+            android:id="@+id/x1"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbox"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+			
+            <requestFocus />
+        <EditText
+            android:id="@+id/y1"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/editbox"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </TableRow>
+    
+    
+    
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tableRow2"
+        android:layout_below="@+id/tableRow2"
+        android:layout_marginTop="34dp" >
+
+        <EditText
+            android:id="@+id/x2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/editbox"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@id/y1"
+            android:textSize="20sp" >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/y2"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/editbox"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:nextFocusDown="@id/x1"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tableRow3"
+        android:layout_below="@+id/tableRow3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_style_green"
+        android:gravity="center"
+        android:text="@string/loginButton"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:width="80dp" />
+
+</RelativeLayout>

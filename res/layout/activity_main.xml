@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFE9F6">
+    
+
+    <TextView
+         android:id="@+id/a_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="50dp"
+         android:gravity="center"
+         android:keepScreenOn="true"
+         android:text="@string/dummy_content"
+         android:textColor="#33b5e5"
+         android:textSize="30sp"
+         android:textStyle="bold" />
+    
+     <EditText
+         android:id="@+id/a_value"
+         android:layout_width="280dp"
+         android:layout_height="50dp"
+         android:layout_below="@+id/a_name"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="26dp"
+         android:background="@drawable/editbox"
+         android:ems="10"
+         android:inputType="number|numberDecimal"
+         android:textColor="#ff0000"
+         android:textSize="20sp" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/loginButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/a_value"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="38dp"
+         android:background="@drawable/btn_style_green"
+         android:gravity="center"
+         android:text="@string/loginButton"
+         android:textSize="18sp"
+         android:textStyle="normal"
+         android:width="80dp" />
+      
+</RelativeLayout>
